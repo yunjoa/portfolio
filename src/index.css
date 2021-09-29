@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  src : url("../fonts/GmarketSansBold.otf");
+  font-family: 'GmarketSanB'
+}
+
+body{
+  cursor: url(../img/ghost.cur) 15 15, auto;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  
+  background: rgb(0, 0, 0);
+  color: white;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* 인트로 */
+.welcome-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.content-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fly-in-text{
+  list-style: none;
+}
+.fly-in-text li {
+  display: inline-block;
+  font-family: 'GmarketSanB';
+  margin-right: 20px;
+  font-size: 5em;
+  color: #fff;
+  opacity: 1;
+  transition: all 1s ease;
+}
+.fly-in-text li:nth-child(3){
+  margin-right: 0;
+}
+.enter-button {
+  display: block;
+  font-family: 'GmarketSanB';
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  color: #F5BB4E;
+  opacity: 1;
+  margin-top: 30px;
+  transition: all 0.1s ease 2s;
+}
+.content-hidden .fly-in-text li {opacity: 0;}
+.content-hidden .fly-in-text li:nth-child(1) {transform: translate3d(-60px,0,0);}
+.content-hidden .fly-in-text li:nth-child(2) {transform: translate3d(0px,0,0);}
+.content-hidden .fly-in-text li:nth-child(3) {transform: translate3d(60px,0,0);}
+.content-hidden .enter-button {opacity: 0; transform: translate3d(0,-30px,0);}
+
+
+
+
+
+
+
+
+
+
+.card {
+	float:left;
+  width: 200px;  height: 200px;
+  overflow: hidden;
+  cursor: url(../img/ghost.cur) 15 15, auto;
+
+}
+
+.wall{
+  width: 60%; height: 80%;
+  transform: translate(40%,15%) scale(85%);
+}
+
+.st-box{
+  font-family: 'GmarketSanB';
+  font-size: 6em;
+  letter-spacing: -0.1rem;
+  word-break: keep-all;
+}
+
+.st-boxB{
+  font-family: 'GmarketSanB';
+  font-size: 7.1em;
+  letter-spacing: -0.8rem;
+}
+
+.st-boxC{
+  font-family: 'GmarketSanB';
+  font-size: 5.4em;
+  color: #fab04e;
+}
+
+
+
+
+
+
+
+
+.bdaycard{
+  width: 20%;
+  height: 42%;
+  background: #5c8370;
+  transform: translate(-160%,68%);
+}
+
+
+.bdaycard > p{
+  font-size: 2.7rem;
+  color: black;
+  padding: 40% 5% 15%;
+  text-align: justify;
+  font-family: 'GmarketSanB';
+}
+
+
+aside{
+  transform: translate(-372%,115%);
+}
+
+aside > img{
+  width: 100%;
+}
+
+.card2{
+font-family: 'Caveat', cursive;
+font-size: 3em;
+text-decoration: none;
+color: #333;
+}
+
+
