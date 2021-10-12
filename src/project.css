@@ -1,0 +1,214 @@
+@font-face {
+  src : url("../fonts/[yoon]_OTE_YoonGothicPro780.otf");
+  font-family: 'yoongothic'
+}
+@font-face {
+  src : url("../fonts/[yoon]_OTE_YoonGothicPro710.otf");
+  font-family: 'yoongothic10'
+}
+@font-face {
+  src : url("../fonts/GmarketSansMedium.otf");
+  font-family: 'gmarketsans'
+}
+
+
+*{margin: 0; padding: 0; 
+}
+
+body{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  width: 90%;
+  padding: 1% 5%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: difference;
+
+}
+
+nav > ul{
+  padding:0;
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none; 
+}
+nav > ul > li {
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+li{
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+.menu{
+  color: gray;
+  text-decoration: none;
+}
+
+.menu:hover{
+  color: white;
+}
+
+.clickedmenu {
+  color: white;
+}
+
+
+
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.swiper-slide {
+  /* overflow: hidden; */
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 60%;
+  margin-right: 13%;
+  height: 100%;
+  margin-left: auto;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide:nth-of-type(odd){
+  background: sienna;
+}
+.swiper-slide:nth-of-type(even){
+  background: rgb(114, 89, 78);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-wrapper{
+}
+.swiper-slide{
+  height: 70%;
+  position: relative;
+}
+
+.swiper-slide img{
+  border-radius: 15px;
+}
+
+.swiper-slide.swiper-slide-prev{
+/* 
+  transform: perspective(600px) rotateY(-25deg)rotateX(15deg);
+  width: 500px; */
+  height: 70%;
+
+}
+
+
+
+
+.title{
+  /* border: hotpink 2px solid; */
+  position: absolute;
+  top: 40% ; left:-35%;
+  transform: translate(0,-50%);
+  width: 20%;
+  text-align: left;
+  font-size: 6rem;
+  font-family: 'yoongothic';
+  transform: rotate(-5deg);
+}
+
+
+.background {
+  background: url(../img/tt4.png) center top no-repeat OldLace;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.background2 {
+  background: rgba(0,0,0,0.8);
+  display: none;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+.swiper-pagination{
+  padding-right: 6%;
+}
+.swiper-pagination-bullet{
+  margin-bottom: 20px  !important;
+  width: 7px; height: 7px;
+  display: table-cell;
+
+}
+
+.swiper-pagination-bullet-active{
+  width: 7px; height: 21px;
+  border-radius: 5px;
+  /* margin-bottom: 5px 0 !important; */
+  background: black;
+}
+
+
+.swiper-pagination{
+  /* border: 2px solid black; */
+}
+
+.swiper-pagination-bullet span{
+  width: 270px; height: 20px;
+  padding: 0 20px;
+  display: inline-block;
+  color: white;
+
+  text-align: left;
+  font-family: 'yoongothic10';
+  /* border: blue 1px solid; */
+  display: none;
+
+}
+.swiper-pagination{
+  display: inline-block;
+}
+
+.tit-swiper-pagination{
+  z-index: 100;
+}

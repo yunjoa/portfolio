@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+@font-face {
+  src : url("../fonts/GmarketSansBold.otf");
+  font-family: 'GmarketSanB'
+}
+
+
+body{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+
+
+  background: rgb(0, 0, 0);
+  color: white;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* 인트로 */
+.welcome-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.content-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fly-in-text{
+  list-style: none;
+}
+
+.fly-in-text li {
+  display: inline-block;
+  font-family: 'GmarketSanB';
+  margin-right: 20px;
+  font-size: 5rem;
+  color: #fff;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.fly-in-text li:nth-child(3){
+  margin-right: 0;
+}
+
+.enter-button {
+  display: block;
+  font-family: 'GmarketSanB';
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #F5BB4E;
+  opacity: 1;
+  margin-top: 30px;
+  transition: all 0.5s ease 1s;
+}
+.content-hidden .fly-in-text li {opacity: 0;}
+.content-hidden .fly-in-text li:nth-child(1) {transform: translate3d(-60px,0,0);}
+.content-hidden .fly-in-text li:nth-child(2) {transform: translate3d(0px,0,0);}
+.content-hidden .fly-in-text li:nth-child(3) {transform: translate3d(60px,0,0);}
+.content-hidden .enter-button {opacity: 0; transform: translate3d(0,-30px,0);}
+
+
+
+
+
+
+
+
+
+.el{
+  /* padding-top: 62.29%; */
+  width: 100%; height: 100%;
+}
+
+.card {
+  position: absolute;
+  width: 100%; height: 100%;
+}
+
+.card > img{
+  width: 100%;
+}
+
+.wall{
+
+  width: 65%; height: auto;
+  top: 50%; left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  
+}
+.bdaycard{
+  width: 20%; height: auto;
+  top: 35%; left: 18%;
+}
+
+.sticker{
+  width: 10%;  
+  height: 10%;
+  top: 30%; left: 32%;
+}
+
+
+
+
+
+.cur0{
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  border: 2px solid rgb(107, 107, 107);
+  position: absolute;
+  mix-blend-mode: difference;
+  z-index: 5000;
+  /* pointer-events: auto; */
+}
+
+.cur1{
+  z-index: 100;
+  mix-blend-mode: difference;
+  width: 7%;
+  opacity: 1;
+  z-index: 5;
+  position: absolute;  
+  /* transform: translate(-50%,-50%); */
+  transform-origin: 50%;
+
+  animation: rotate 5s normal linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) ;
+    trans
+  }
+  50% {
+    transform: rotate(180deg) ;
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg) ;
+    transform-origin: center;
+  }
+}

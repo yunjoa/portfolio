@@ -1,0 +1,297 @@
+@font-face {
+  src : url("../fonts/[yoon]_OTE_YoonGothicPro780.otf");
+  font-family: 'yoongothic'
+}
+@font-face {
+  src : url("../fonts/[yoon]_OTE_YoonGothicPro710.otf");
+  font-family: 'yoongothic10'
+}
+@font-face {
+  src : url("../fonts/GmarketSansMedium.otf");
+  font-family: 'gmarketsans'
+}
+
+a{text-decoration: none; color: white;}
+*{margin: 0; padding: 0; }
+
+
+body{
+  background: black;
+  position: relative;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+nav {
+  width: 90%;
+  padding: 1% 5%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul{
+  padding:0;
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none; 
+}
+nav > ul > li {
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+
+.menu{
+  color: white;
+  text-decoration: none;
+}
+
+.menu:hover{
+  color: gray;
+}
+
+.clickedmenu {
+  color: gray;
+}
+
+
+.profile{
+  letter-spacing: -0.05rem;
+}
+
+
+
+
+
+h2{
+  font-size: 4.5rem;
+  word-break:keep-all;
+  padding-bottom: 120px;
+  font-family: 'yoongothic';
+  letter-spacing: -0.4rem;
+  margin: 0;
+  line-height: 1.3em;
+}
+
+.h2b{color: gray;}
+
+video{
+  padding: 15% 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+}
+
+.two_side{
+  display: flex;
+  width: 90%;
+  padding: 5% 5% 0;
+}
+
+.leftside{
+  width: 20%;
+  padding: 0;
+  height: auto;
+  /* border: violet 1px solid; */
+}
+
+.vertical{
+  font-family: 'yoongothic';
+  height: 12em;
+  font-size: 15em;
+  writing-mode: vertical-rl;
+  width: 100%;
+
+}
+
+
+.rightside{
+  width: 75%;
+  padding: 0;
+  /* border: violet 1px solid; */
+  margin-left: auto;
+}
+
+
+.date{
+  display: inline-block;
+  width: 120px;
+}
+
+
+.line1 {
+  display: block;
+  background: white;
+  width: 1px;
+  height: 300px;
+  margin-bottom: 120px;
+}
+
+ul{
+  padding-bottom: 130px;
+}
+
+li{
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+
+h3{
+  font-family: "gmarketsans";
+  color: gray;
+  font-size: 2rem;
+  padding: 400px 0 30px;
+  line-height: 2.5rem;
+}
+
+h4{
+  font-family: 'yoongothic10';
+}
+
+h5{
+  font-size: 1.2rem;
+  color: black;
+}
+
+h6{
+  font-size: 1rem;
+  padding-left: 20px;
+  font-family:'yoongothic10';
+}
+
+.getintouch li h4 a:hover {
+  color: gray;
+}
+.getintouch li h4:hover {
+  color: gray;
+}
+
+
+
+
+
+.tmi li {
+  padding: 80px 0 200px 0;
+  width: 500px;
+  word-break: break-all;
+  line-height: 2rem;
+}
+
+.tmi li img{
+  width: 500px;
+  padding: 30px 0 50px;
+}
+
+
+
+#kakao{
+  position: relative;
+}
+
+
+.modal{
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal_overlay{
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  
+}
+.modal_content{
+  background-color: white;
+  width: 20%;
+  border-radius: 10px;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.modal_content img{
+  width: 100%;
+}
+.btn_close{
+  border: none;
+  background: none;
+  display: block;
+  margin-left: auto;
+  padding: 5px;
+}
+.btn_close > img{
+  width: 100%;
+}
+
+.show{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+.swiper {
+  width: 500px;
+  height: 320px;
+  padding: 50px 0 200px;
+  margin: 0 0 400px 5px;
+  z-index: 10;
+}
+
+.swiper-slide {
+  padding: 40px 0;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+
+.swiper-slide > img{
+  width: 400px;
+  padding: 0 20px;
+}
+
+.swiper-slide h4{
+  padding-left: 20px;
+}
+
+
+.tmicap p{
+  font-family: 'yoongothic';
+  font-size: 2.5rem;
+  padding: 180px 50px;
+  
+}
+
+.tmicap p span{
+  font-family: 'yoongothic10';
+  font-size: 1rem;
+  padding: 30px 0;
+  display: block;
+}
+
