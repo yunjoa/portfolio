@@ -15,12 +15,11 @@ $(document).ready(function(){
     },
     centeredSlides:true,
     slidesPerView: 'auto',
-    spaceBetween: 50,
-
+    spaceBetween: 50
   });
 
   alert(1)
-
+  console.log('안돼잖아')
 
 
   // swiper.on('slideChange', function () {
