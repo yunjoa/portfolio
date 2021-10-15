@@ -12,8 +12,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
   <script src="./src/js/project-detail.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
   <link rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="src/project-detail.css">
 
   
@@ -34,22 +37,23 @@
       </li>
     </ul>
     <div>
-      <a class="menu" href="https://joayun.notion.site/fc745145195b4fab82b3b60e91e71a77">
+      <a class="menu" href="https://joayun.notion.site/fc745145195b4fab82b3b60e91e71a77" target="_blank">
         archive
       </a>
     </div>
   </nav>
 
 
-  <div class="first_thum">
-    <img class="firThumbImg" src="" alt="">
+  <div class="first_thum" data-aos="zoom-in" data-aos-duration="1500">
+    <img class="firThumbImg" src="" alt="" >
     <div class="titandperiod">
       <h2 class="tit2">--</h2>
     </div>
   </div>
 
+
   
-  <div class="description">
+  <div class="description" data-aos="fade-up" data-aos-duration="1500">
     <div class="descript_left">
   
       <h3 class="tit3">
@@ -57,20 +61,20 @@
       </h3>
       <h4 class="tit4">
         <span class="sub-tit"> Client </span> 
-        <span class="client"> 삼성전자 </span>
+        <span class="client"> - </span>
       </h4>
       <h4 class="tit4">
         <span class="sub-tit"> Category </span>  
-        <span class="category"> Digital Experience </span>
+        <span class="category"> - </span>
         <br> 
         <span class="sub-tit"> Date </span>  
-        <span class="date"> Digital Experience </span>
+        <span class="date"> - </span>
         <div>
           <span class="sub-tit"> Service </span>
-          <span class="service"> Digital Experience </span>
+          <span class="service"> - </span>
         </div>
       </h4>
-      <button class="btn_site">
+      <button onclick="location.href='https://yunjoa.github.io/wooami/'" target="_blank" class="btn_site">
         사이트 바로가기
       </button>
     </div>
@@ -92,10 +96,11 @@
   
   
   
-  <div class="img_2">
+  <div class="img_2" data-aos="fade-up">
     <img src="" alt="">
   </div>
-  <div class="point1 point">
+
+  <div class="point1 point" data-aos="fade-up" data-aos-duration="1500">
     <h5>어떤어떤 포인트 머~어쩌꼬 쩌쪼꼬</h5>
     <p class="h5_con">
       어떤디테일이 어쩌구저쩌구 ㅁㄴㅇㄻㄴㅇㄹㅁㄴㅇㄻㄴㄹ<br>
@@ -103,7 +108,7 @@
     </p>
   </div>
 
-  <div class="swiper mySwiper">
+  <div class="swiper mySwiper" data-aos="zoom-out-left" data-aos-duration="1000">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img class="swiper-slide-img" src="" alt="">
@@ -132,7 +137,7 @@
 
 
 
-  <div class="point2 point">
+  <div class="point2 point" data-aos="fade-left" data-aos-duration="1000">
     <div class="point2_word">
       <h5>어떤머시기저시기</h5>
       <p class="h5_con">
@@ -140,10 +145,10 @@
         사용자 고객어쩌구저ㅉ@ㅓ구합니다
       </p>
     </div>
-    <div class="point2_img"><img src="" alt=""></div>
+    <div class="point2_img "><img src="" alt=""></div>
   </div>
 
-  <div class="point3 point">
+  <div class="point3 point" data-aos="fade-right" data-aos-duration="1000">
     <div class="point3_word">
       <h5>어떤머시기저시기</h5>
       <p class="h5_con">
@@ -151,10 +156,10 @@
         사용자 고객어쩌구저ㅉ@ㅓ구합니다
       </p>
     </div>
-    <div class="point3_img"><img src="" alt=""></div>
+    <div class="point3_img "><img src="" alt=""></div>
   </div>
 
-  <div class="point4 point">
+  <div class="point4 point" data-aos="fade-up" data-aos-duration="1500">
     <div class="point4_word">
       <h5>어떤머시기저시기</h5>
       <p class="h5_con">
@@ -169,7 +174,11 @@
   </div>
 
   <footer>
-    다음페이지--
+    <img src="" alt="">
+    <div class="next_wrap">
+      <p class="next_sub"> NEXT PROJECT </p>
+      <p class="next_tit">dd</p>
+    </div>
   </footer>
 
 

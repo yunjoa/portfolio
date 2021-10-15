@@ -47,9 +47,6 @@
 
 
 
-<div class="cur0"></div>
-<img class="cur1" src="img/cur-about.svg" alt="">
-
 
   <!-- 인트로 -->
   <div class="welcome-section content-hidden">
@@ -67,7 +64,11 @@
   
 
 
-
+  <div class="cur0"></div>
+  <img class="cur1" src="img/cur-about.svg" alt="">
+  <img class="cur2" src="img/cur-work.svg" alt="">
+  
+  
 
   <script type="text/javascript">
 
@@ -83,30 +84,65 @@ $(function(){
         welcomeSection.fadeOut();
       },2500);
       // setTimeout(function(){
-      //   mouseCursor.fadeIn();
+      //   mouseCursor1.fadeIn();
       // },3000);
     });
 
 
+let mouseCursor2 = document.querySelector(".cur2"); 
 let mouseCursor1 = document.querySelector(".cur1"); 
-// ㄴ 얘때문에 안돼
 let mouseCursor0 = document.querySelector(".cur0");
-// ㄴ 얘를 지우면 아무것도 안보여 
+let aboutme = document.querySelector(".bdaycard");
+let wall = document.querySelector(".wall");
+let sticker = document.querySelector(".sticker");
 
   window.addEventListener("mousemove", cursor);
-  
-  
+  window.addEventListener("click", () => {
+    mouseCursor0.classList.add("clickcursor");
+    setTimeout(() => {
+      mouseCursor0.classList.remove("clickcursor");
+    },300)
+  });
+
   
   function cursor(e) {
-    mouseCursor0.style.top = e.pageY + "px";
-    mouseCursor0.style.left = e.pageX + "px";
-    mouseCursor1.style.transform = "translate(-50%,-50%)"
+    mouseCursor0.style.top = (e.pageY-2) + "px";
+    mouseCursor0.style.left = (e.pageX-2) + "px";
+  }
+  
+
+
+  aboutme.addEventListener("mousemove", cursorA);
+  aboutme.addEventListener("mouseleave", cursorAhide);
+
+  function cursorA(e) {
+    mouseCursor1.style.display = "block"
     mouseCursor1.style.top = e.pageY + "px";
     mouseCursor1.style.left = e.pageX + "px";
-}
+    mouseCursor1.style.transform = "translate(-50%,-50%)"
+    console.log(1)
+  }
+  
+  function cursorAhide(e) {
+    mouseCursor1.style.display = "none"
+  }
 
 
-    
+
+  wall.addEventListener("mousemove", cursorB);
+  wall.addEventListener("mouseleave", cursorBhide);
+
+  function cursorB(e) {
+    mouseCursor2.style.display = "block"
+    mouseCursor2.style.top = e.pageY + "px";
+    mouseCursor2.style.left = e.pageX + "px";
+    mouseCursor2.style.transform = "translate(-50%,-50%)"
+    console.log(1)
+  }
+  
+  function cursorBhide(e) {
+    mouseCursor2.style.display = "none"
+  }
 
 
 $(".card").draggable({

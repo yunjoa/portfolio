@@ -11,11 +11,21 @@
   font-family: 'gmarketsans'
 }
 
+@font-face {
+  src : url("../fonts/StretchPro.otf");
+  font-family: 'Stretch'
+}
+
+
+
+
+
 a{text-decoration: none; color: white;}
 *{margin: 0; padding: 0; }
 
 
 body{
+  overflow-x: hidden;
   background: black;
   position: relative;
   margin: 0; padding: 0;
@@ -61,10 +71,36 @@ nav > ul > li {
 
 
 .profile{
-  letter-spacing: -0.05rem;
+  padding-top : 20px;
+  line-height: 1.5rem;
 }
 
+.profile_line{
+  width: 30px;
+  height: 1px;
+  background: white;
+  display: block;
+  margin: 20px 0; 
+}
 
+.star{
+  width: 200px;
+  display: block;
+  padding: 10px 0 85px;
+  animation: mirrorflip 10s 0s linear infinite;
+}
+
+@keyframes mirrorflip {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(-1, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
 
 
 
@@ -80,25 +116,38 @@ h2{
 
 .h2b{color: gray;}
 
-video{
-  padding: 15% 0;
-  width: 100%;
+
+.vid_face{
+  width: 100%; height: 350px;
+  /* border: rgb(133, 210, 255) 2px solid; */
+  
+  overflow: hidden;
   position: sticky;
+
   top: 0;
   z-index: 5;
-
 }
+video{
+  padding: 15% 0;
+  width: 110%;
+  min-width: 300px;
+
+  transform: translate(-40px,0);
+  
+  /* border: violet 2px solid; */
+}
+
 
 .two_side{
   display: flex;
   width: 90%;
-  padding: 5% 5% 0;
+  padding: 10% 5% 0;
 }
 
 .leftside{
   width: 20%;
   padding: 0;
-  height: auto;
+  /* height: 3000px; */
   /* border: violet 1px solid; */
 }
 
@@ -108,6 +157,7 @@ video{
   font-size: 15em;
   writing-mode: vertical-rl;
   width: 100%;
+  mix-blend-mode: difference;
 
 }
 
@@ -120,10 +170,23 @@ video{
 }
 
 
+.self{
+  background: white;
+  height: 500px;
+  
+  
+}
+
 .date{
   display: inline-block;
   width: 120px;
 }
+
+
+
+
+
+
 
 
 .line1 {
@@ -132,6 +195,11 @@ video{
   width: 1px;
   height: 300px;
   margin-bottom: 120px;
+}
+
+hr{
+  size : 1px; 
+  color :darkgray;
 }
 
 ul{
@@ -144,11 +212,152 @@ li{
 }
 
 
+
+.block{
+  width: 100%;
+  padding-top: 200px;
+}
+.block2{
+  padding-top: 350px;
+  width: 75%;
+  margin-left: auto;
+}
+
+
+/* 아코디언 */
+.accord-wrap{
+  width: 100%;
+  border-top: 15px solid;
+  border-left: 1px solid;
+}
+
+.accor-tit{
+  padding-left: 50px;
+  text-transform: uppercase;
+}
+
+.accord-wrap ul{
+  list-style: none;
+  padding: 0;
+}
+
+.accordlist li{
+  font-family: 'yoongothic10';
+  font-weight: 700;
+
+  border-top: 1px solid;
+  padding: 30px 50px;
+  position: relative;
+}
+
+.accordQuestion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+}
+
+.faqArrow{
+  transform: rotate(90deg) translateX(15%);
+  fill:white;
+}
+
+/* .faqArrow.active{
+  transform: translateY(-50%) rotate(-90deg);
+} */
+
+.accordAnswer{
+  padding: 50px;
+  margin-top: 20px;
+  background: rgb(255, 255, 255);
+  color: #333;
+  display: none;
+}
+
+
+
+
+
+
+
+.deco_txt{
+  width: 96%;
+  padding: 0 2%;
+
+  font-family: 'Stretch';
+  font-size: 6.3rem;
+  padding-bottom: -40px;
+  line-height: 5.8rem;
+
+  color: black;
+  text-shadow:
+  -1px -1px 0 rgb(255, 255, 255),
+  1px -1px 0 rgb(255, 255, 255),
+  -1px 1px 0 rgb(255, 255, 255),
+  1px 1px 0 rgb(255, 255, 255); 
+
+  position: relative;
+}
+
+.fill{
+  color:white;
+}
+
+.contact{
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  bottom: -5%;
+  right: 5%;
+
+  text-shadow: none;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  text-align: right;
+  color: gray;
+  font-family: 'yoongothic10';
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.contact > h4{
+  font-family: 'yoongothic10';
+  font-weight: 700;
+}
+
+.white{
+  color: white;
+}
+
+.contact h4:nth-of-type(1){
+  padding-bottom: 50px;
+}
+.contact h4:nth-of-type(2){
+  padding-bottom: 30px;
+  color: white;
+}
+
+
+
+.icon-sns svg{
+  fill:white;
+  width: 34px;
+  height: 34px;
+  padding-left: 7px;
+}
+
+.icon-sns svg:hover{
+  fill:gray;
+}
+
+
+
+
 h3{
   font-family: "gmarketsans";
   color: gray;
   font-size: 2rem;
-  padding: 400px 0 30px;
+  padding: 50px 0 30px;
   line-height: 2.5rem;
 }
 
@@ -178,22 +387,11 @@ h6{
 
 
 
-.tmi li {
-  padding: 80px 0 200px 0;
-  width: 500px;
-  word-break: break-all;
-  line-height: 2rem;
-}
-
-.tmi li img{
-  width: 500px;
-  padding: 30px 0 50px;
-}
-
 
 
 #kakao{
   position: relative;
+  cursor: pointer;
 }
 
 
@@ -237,6 +435,7 @@ h6{
 }
 .btn_close > img{
   width: 100%;
+  cursor: pointer;
 }
 
 .show{
@@ -254,44 +453,144 @@ h6{
 
 .swiper {
   width: 500px;
-  height: 320px;
-  padding: 50px 0 200px;
-  margin: 0 0 400px 5px;
+  height: 400px;
+  padding: 20px 0 300px;
+
   z-index: 10;
+  margin-left: 0;
 }
 
 .swiper-slide {
-  padding: 40px 0;
-  border-radius: 18px;
+  border-radius: 5px;
   font-size: 22px;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  border: 5px solid rgb(255, 255, 255);
   background: rgb(0, 0, 0);
+  border: rgb(56, 56, 56) 1px solid;
+}
+
+.tmi li {
+  padding: 80px 0 200px 0;
+  width: 500px;
+  word-break: break-all;
+  line-height: 2rem;
+}
+
+.tmi li h6 {
+  padding: 50px 30px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 
-.swiper-slide > img{
-  width: 400px;
-  padding: 0 20px;
-}
-
-.swiper-slide h4{
-  padding-left: 20px;
+.swiper-slide > div > img{
+  width: 440px;
+  padding: 0 30px;
 }
 
 
 .tmicap p{
-  font-family: 'yoongothic';
-  font-size: 2.5rem;
-  padding: 180px 50px;
-  
+  font-family: 'stretch';
+  font-size: 6rem;
+  line-height: 6rem;
+  padding: 0px 50px;
+}
+.tmicap p:nth-of-type(2){
+  color: gray;
+  padding: 0 50px;
+}
+.tmicap p:nth-of-type(3){
+  font-family: 'yoongothic10';
+  font-size: 1.2rem;
+  padding: 50px 50px 0 50px;
+  display: block;
 }
 
-.tmicap p span{
-  font-family: 'yoongothic10';
+
+
+
+
+.top{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+  z-index: 20;
+  mix-blend-mode: difference;
+
   font-size: 1rem;
-  padding: 30px 0;
-  display: block;
+  padding-left: 20px;
+  font-family:'yoongothic10';
+  font-weight: 700;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  padding-top: 350px;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+
+  /* border: springgreen 5px solid; */
+}
+
+.svg-warp{
+  /* border: rgb(141, 184, 162) 5px solid; */
+  height: 600px;
+  overflow: hidden;
+}
+
+textPath{
+  font-family: 'Stretch';
+  word-spacing: -5px;
+  text-align: center;
+}
+
+footer img{
+  width: 100px;
+}
+
+.fooCon{
+  position: absolute;
+  bottom: -70%; left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+footer p{
+  padding: 50px 0 100px;
+}
+
+/* 미디어쿼리 */
+
+@media (max-width: 720px) {
+  .bdaycard{
+    top: 37%; left: 18%;
+  }
+  .sticker{
+    top: 35%; left: 32%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bdaycard{
+    top: 39%; left: 18%;
+  }
+
+  .sticker{
+    top: 36%; left: 32%;
+  }
 }
 

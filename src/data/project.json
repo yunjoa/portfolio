@@ -1,6 +1,18 @@
 {
+
+"list":[
+  {
+    "title":"WOOAMI",
+    "summary":"처음으로 만든 웹페이지"
+  },
+  {
+    "title":"LOCK N LOCK",
+    "summary":"첫 클론코딩 사이트"
+  }
+],
 "firstProject":[
     {
+    "headTitle" : "포트폴리오 : 우아미가구 사이트 리뉴얼",
     "projectName": "우아미가구 사이트 리뉴얼",
     "title" : "디자인, 레이아웃, 설계 리뉴얼",
     "client": "우아미가구",
@@ -9,7 +21,8 @@
     "service": "쿠키팝업, 상품검색, 장바구니, 게시판",
     "brief" : "HTML, CSS를 배우고 처음으로 정보설계, 컨텐츠 커스터마이징부터 기획제작하여 리뉴얼한 웹사이트입니다. 오리지널 사이트가 전체적으로 좌측정렬이 되어 구조적으로 수정할 여지가 있었고  네비가 상단과 좌측에 중복되어 있었습니다. 로그인 버튼이 없고 장바구니를 클릭해야 로그인창을 볼 수 있었고 약도 등 필요한 정보가 식별하기 힘든 곳에 링크되어 있었습니다. 로고가 탑 메뉴에는 보이지 않고 좌측 배너에 여러번 삽입되어 브랜드성이 떨어지는 등의 수정할 곳을 보완했습니다. 수업과정 중에 배운 슬라이드, 쿠키, json등을 활용하여 사이트를 제작하였습니다.",
     "concept" : "기존 우아미 사이트의 로고의 컬러,올리브그린과 딥그린을 활용하였습니다. 올리브그린색을 주색으로 활용하고 강조색은 딥그린을 사용하였고, 폰트는 깔끔하고 가독성이 좋은 고딕계열의 노토산스를 사용하였습니다.",
-    "first_thumb" : "img/visual_side_table.jpg",
+    "btn_link" : "",
+    "first_thumb" : "img/visual_sofa.jpg",
     "second_thumb" : "img/visual_side_table.jpg",
     "point1_tit" : "디자인",
     "point1_con" : "중복된 정보는 삭제하고 정보의 우선도를 파악하여 컨텐츠의 위치와 강조순위를 정리하였습니다. 각 컴포넌츠를 미니멀하게 디자인하는 반면 상품의 썸네일 사이즈는 일괄적으로 통일하고 확대시켜서 주목성을 올렸습니다.",
@@ -27,7 +40,10 @@
     "point4_pics2" : "img/cookie.jpg",
     "point5_con" : "필터",
     "point5_tit" : "각 상품의 정보를 JSON으로 리스트업하여 필터로 분류 검색할 수 있도록 하였습니다.",
-    "point5_pic" : ""
+    "point5_pic" : "",
+    "nextPage_img":"img/principles-1-lg.jpg",
+    "nextPage_tit":"Lock N Lock 클론 코딩",
+    "nextPage_link":"project-detail2.html"
     
   }
 ],

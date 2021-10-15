@@ -3,6 +3,9 @@
 
 
   $(document).ready(function(){
+
+
+    // 슬라이드
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -11,17 +14,18 @@
         clickable: true,
       },
     })
+
+    //scroll event
+    AOS.init();
+
   });
-
   
-
+    //json연결
   $(function(){
-    //start 
 
     $.ajax({
         url:'src/data/project.json',
         success:function(data){
-          console.log('hi')
 
           let projectName,projectCon,title='';
 
@@ -29,6 +33,7 @@
             console.log(data.firstProject)
             console.log(h.projectName)
 
+            headTitle = `${h.headTitle}`
             projectName = `${h.projectName}`
             title = `${h.title}`
             client = `${h.client}`
@@ -37,6 +42,7 @@
             service = `${h.service}`
             brief = `${h.brief}`
             concept = `${h.concept}`
+            btn_link = `${h.btn_link}`
             first_thumb = `${h.first_thumb}`
             second_thumb = `${h.second_thumb}`
             point1_tit = `${h.point1_tit}`
@@ -53,10 +59,14 @@
             point4_con = `${h.point4_con}`
             point4_pics1 = `${h.point4_pics1}`
             point4_pics2 = `${h.point4_pics2}`
+            nextPage_img = `${h.nextPage_img}`
+            nextPage_tit = `${h.nextPage_tit}`
+            nextPage_link = `${h.nextPage_link}`
+            
             
 
-            console.log(h.point1_pic1)
-            console.log(h.first_thumb)
+
+            $(title).text(headTitle);
             $(".tit2").text(projectName);
             $(".tit3").text(title);
             $(".client").text(client);
@@ -84,10 +94,9 @@
             
             $(".point4_img:nth-of-type(1) img").attr("src", point4_pics1);
             $(".point4_img:nth-of-type(2) img").attr("src", point4_pics2);
-            
-
-
-          })
+            $("footer img").attr("src", nextPage_img);
+            $(".next_tit").text(nextPage_tit);
+  })
 
 
 
@@ -137,13 +146,15 @@
     //     }
     // });
 
+
+    // 다음페이지 자동 전환
     var nextpage;
-    $("footer").hover(function() {
+    $(".next_tit").hover(function() {
         if (!nextpage) {
             nextpage = window.setTimeout(function() {
                 nextpage = null;
-                window.location.href="project-detail2.html"
-          }, 2500);
+                window.location.href=nextPage_link
+          }, 1800);
         }
     },
     function () {
@@ -155,6 +166,8 @@
           // $("#SeeAllEvents").slideUp('slow');
         }
     });
+
+
 
 
 })

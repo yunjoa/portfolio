@@ -12,8 +12,9 @@
 
 body{
   height: 100vh;
-  width: 100%;
+  width: 100%; min-width: 400px;
   overflow: hidden;
+  
 
 
 
@@ -38,7 +39,7 @@ a{
   background: rgb(0, 0, 0);
   text-align: center;
   overflow: hidden;
-  z-index: 1;
+  z-index: 20;
 }
 .content-wrap {
   position: absolute;
@@ -105,62 +106,137 @@ a{
 }
 
 .wall{
-
   width: 65%; height: auto;
   top: 50%; left: 50%;
   position: absolute;
   transform: translate(-50%,-50%);
   
 }
+
 .bdaycard{
   width: 20%; height: auto;
   top: 35%; left: 18%;
+  z-index: 2;
 }
+
+
+
+
 
 .sticker{
   width: 10%;  
   height: 10%;
   top: 30%; left: 32%;
+  z-index: 10;
 }
-
 
 
 
 
 .cur0{
-  width: 1px;
-  height: 1px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
-  border: 2px solid rgb(107, 107, 107);
+  background: rgb(107, 107, 107);
   position: absolute;
   mix-blend-mode: difference;
-  z-index: 5000;
-  /* pointer-events: auto; */
+  pointer-events: none;
+
+  z-index: 10;
+  
+  
+    /* transition-duration: 100ms;
+  transition-timing-function: ease-out;*/
+}
+.cur0::after{
+  content: '';
+  position: absolute;
+  top: -7px; left: -7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid rgb(107, 107, 107);
+  position: absolute;
+  mix-blend-mode: difference;
+  pointer-events: none;
+
 }
 
-.cur1{
+.clickcursor{
+  animation: cursorShake .5s forwards;
+  border: 1px solid #494949 ;
+  background: #ffffff; 
+}
+
+
+@keyframes cursorShake {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(3);
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+  
+}
+
+
+
+
+.cur1, .cur2{
   z-index: 100;
   mix-blend-mode: difference;
   width: 7%;
   opacity: 1;
-  z-index: 5;
+  z-index: 11;
   position: absolute;  
-  /* transform: translate(-50%,-50%); */
+  transform: translate(-50%,-50%);
   transform-origin: 50%;
+  mix-blend-mode: difference;
 
+  pointer-events: none;
   animation: rotate 5s normal linear infinite;
 }
+
+.cur1{
+  mix-blend-mode:luminosity;
+  z-index: 11;
+}
+
+
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(0deg) ;
-    trans
   }
-  50% {
-    transform: rotate(180deg) ;
-    transform-origin: center;
-  }
-  100% {
+  to {
     transform: rotate(360deg) ;
-    transform-origin: center;
   }
 }
+
+
+
+
+/* 미디어쿼리 */
+
+@media (max-width: 720px) {
+  .bdaycard{
+    top: 37%; left: 18%;
+  }
+  .sticker{
+    top: 35%; left: 32%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bdaycard{
+    top: 39%; left: 18%;
+  }
+
+  .sticker{
+    top: 36%; left: 32%;
+  }
+}
+
