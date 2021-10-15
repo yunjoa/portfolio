@@ -4,7 +4,7 @@ $(document).ready(function(){
   // 스와이퍼
 
   var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
+    // direction: "vertical",
     speed:300,
     mousewheel:{
       thresholdTime:300
@@ -15,7 +15,7 @@ $(document).ready(function(){
     },
     centeredSlides:true,
     slidesPerView: 'auto',
-    spaceBetween: 50
+    spaceBetween: 50,
 
   });
 
