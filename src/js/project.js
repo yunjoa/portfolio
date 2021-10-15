@@ -19,6 +19,7 @@ $(document).ready(function(){
 
   });
 
+  alert(1)
 
 
 
@@ -96,7 +97,7 @@ $(document).ready(function(){
   // })
 
 
-  // 반응형할 경우
+  
   
 
 })
