@@ -199,7 +199,7 @@ li{
 
 /* 배경 */
 .background {
-  background: url(../img/tt4.png) center top no-repeat OldLace;
+  background: url(../../img/tt4.png) center top no-repeat OldLace;
   background-size: cover;
   display: block;
   width: 100%;
