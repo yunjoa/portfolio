@@ -82,8 +82,7 @@
             nextPage_tit = `${h.nextPage_tit}`
             nextPage_link = `${h.nextPage_link}`
             nextPage_link_href = "location.href='"+nextPage_link+"'"
-            siteview_link = "location.href='"+siteview+"'"
-            
+            siteview_link = "window.open('"+siteview+"')"
 
 
             $(title).text(headTitle);

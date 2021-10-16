@@ -1,9 +1,27 @@
 
 window.onload = function(){
 
+  
+  console.log('upload1')
+  console.log('hello, kkakkung')
+
+    // 커서 
+    let mouseCursor0 = document.querySelector(".cur0");
+    window.addEventListener("mousemove", cursor);
+    window.addEventListener("click", () => {
+    mouseCursor0.classList.add("clickcursor");
+    setTimeout(() => {
+      mouseCursor0.classList.remove("clickcursor");
+    },300)
+    });
+  
+    function cursor(e) {
+    mouseCursor0.style.top = (e.pageY-2) + "px";
+    mouseCursor0.style.left = (e.pageX-2) + "px";
+    }
+
 
   // 스와이퍼
-  console.log('hello, kkakkung')
 
 
   var swiper = new Swiper(".mySwiper", {
@@ -95,22 +113,6 @@ window.onload = function(){
   })
 
 
-
-    // 커서 
-    let mouseCursor0 = document.querySelector(".cur0");
-    window.addEventListener("mousemove", cursor);
-    window.addEventListener("click", () => {
-    mouseCursor0.classList.add("clickcursor");
-    setTimeout(() => {
-      mouseCursor0.classList.remove("clickcursor");
-    },300)
-    });
-  
-    function cursor(e) {
-    mouseCursor0.style.top = (e.pageY-2) + "px";
-    mouseCursor0.style.left = (e.pageX-2) + "px";
-    }
-    console.log('upload1')
 
 
 };
