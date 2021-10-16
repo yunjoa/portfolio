@@ -9,16 +9,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/about.css">
 
-  <link rel="stylesheet" href="src/about.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="src/js/about.js"></script>
 
-  
 </head>
 <body>
 
+
+  <!-- 커서 -->
+  <div class="cur0"></div>
+
+
+  <!-- 네비 -->
   <nav>
     <ul>
       <li>
@@ -38,10 +46,11 @@
       </a>
     </div>
   </nav>
-  <div class="two_side">
 
+  <!-- 컨텐 -->
+  <div class="two_side">
     <div class="leftside">
-      <img class="star" src="img/star.svg" alt=""  data-aos="flip-left" >
+      <img class="star" src="img/star.svg" alt="별그림"  data-aos="flip-left" >
       <h6 class="profile">
         @ <br>
         윤지화 <br>
@@ -54,12 +63,11 @@
       </h6>
       <div class="vid_face">
         <video Autoplay muted loop>
-          <source src="img/me.mp4" type="video/mp4">
+          <source src="img/me.mp4" type="video/mp4" alt="미모티콘 동영상">
         </video>
       </div>
-
-      <!-- <div class="vertical">STEP BY STEP</div> -->
     </div> 
+
     <div class="rightside">
       <h2>
         각  맞춰  정리하는 것, <br>
@@ -79,9 +87,7 @@
       <hr>
 
 
-
-      
-
+      <!-- 커리어&자격증 -->
       <div class="block" data-aos="fade-up" data-aos-duration="1500">
         <h3>
           CAREER & CERTIFICATE
@@ -112,11 +118,10 @@
             </h4>
           </li>
         </ul>
-    </div>
+      </div>
+      <hr>
 
-
-    <hr>
-
+      <!-- 아코디언 QNA -->
       <div class="block" data-aos="fade-left">
         <article class="accord-wrap">
           <h3 class="accor-tit">
@@ -127,34 +132,57 @@
             <ul class="accordlist">
               <li>
                 <div class="accordQuestion">
-                  <p>이력서 및 자기소개서를 보고 싶어요</p>
+                  <p>Q. 업무환경에서 당신은 어떤사람인가요?</p>
                   <svg class="faqArrow"xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
                 </div>
                 <div class="accordAnswer">
-                  내용 첨부 <br>
-                  https://docs.google.com/document/d/14h6ZmUU6arxqDeCOk4O7PJSGpnxQaKHr/edit?usp=sharing&ouid=109803110404533441074&rtpof=true&sd=true
+                  A. <br>
+                  적응력이 좋습니다. 스스로는 낯을 가리고 내향적인 성격이라고 생각하지만 <br>
+                  저를 아는 사람들에게 이 말을 하면 1도 믿어주지 않습니다. <br>
+                  그 와중에 제일 자존심 상하는 말은 너 재미없다. <br><br>
+
+                  일을 할 땐 믿고 맡길 수 있는 동료가 되는 것을 무엇보다 우선시합니다. <br>
+                  사람들에게 도움이 되면 뿌듯함을 느끼고 채찍보단 당근에 회유되기 쉽습니다. <br>
+                  또, 저는 소통하며 일할 때 효율이 올라갑니다. <br>
+                  젠체 하지 않고 도와가며 다 같이 으쌰으쌰- 업무하는 분위기를 좋아합니다. <br><br>
+                 
+                  업무용 커뮤니케이션은 두루뭉술하지 않고 <br>
+                  정확하게 의사 전달하는 것이 중요하다고 생각합니다. <br> 이해한 척 하기 없기. 우리 모두 약속! 
                 </div>
-              </li>
+              </li>   
+
               <li>
                 <div class="accordQuestion">
-                  <p>이력서 및 자기소개서를 보고 싶어요</p>
+                  <p>Q.이 전에는 무얼 했나요?</p>
                   <svg class="faqArrow"xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
                 </div>
                 <div class="accordAnswer">
-                  내용 첨부 <br>
-                  https://docs.google.com/document/d/14h6ZmUU6arxqDeCOk4O7PJSGpnxQaKHr/edit?usp=sharing&ouid=109803110404533441074&rtpof=true&sd=true
+                  A. <br>
+                  20대 초반에는 여러가지 알바로 생존 능력을 길렀습니다. <br>
+                  그러다 전문직(안정적인)이 되고 싶어서 직업 적성 검사를 하고 NCS 광고편집 과정을 수강했습니다. <br>
+                  편집 디자인 회사에서 3~4년 근무하고, 외주로 1년 정도 생활을 했습니다. <br><br>
+
+                  코로나 출몰로 일상이 바뀌어 잠시 방황 후, 제 2, 3의 팬데믹을 상정하게 되었고 <br>
+                  사양산업 직종에서 업그레이드가 필요하다고 느껴서 이 길로 들어서게 되었습니다. <br>
+                  궁금하시다면 이전에 작업한 
+                  <span class="accordlink" onclick="location.href='https://kami.app/Vfj-Ccz-k68'" target="_blank">편집 포트폴리오</span>도 확인해 보실 수 있습니다. 
                 </div>
               </li>
+
               <li>
                 <div class="accordQuestion">
-                  <p>이력서 및 자기소개서를 보고 싶어요</p>
+                  <p>Q. 이력서 및 자기소개서를 보고 싶군요!</p>
                   <svg class="faqArrow"xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
                 </div>
                 <div class="accordAnswer">
-                  내용 첨부 <br>
-                  https://docs.google.com/document/d/14h6ZmUU6arxqDeCOk4O7PJSGpnxQaKHr/edit?usp=sharing&ouid=109803110404533441074&rtpof=true&sd=true
+                  A. <br>
+                  <span class="accordlink" onclick="location.href='https://docs.google.com/document/d/14h6ZmUU6arxqDeCOk4O7PJSGpnxQaKHr/edit?usp=sharing&ouid=109803110404533441074&rtpof=true&sd=true'" target="_blank" >이력서&nbsp;</span> 와
+                  <span class="accordlink" onclick="location.href='https://docs.google.com/document/d/14h6ZmUU6arxqDeCOk4O7PJSGpnxQaKHr/edit?usp=sharing&ouid=109803110404533441074&rtpof=true&sd=true'" target="_blank">자기소개서&nbsp;</span> 입니다. <br>
+                  관심 가지고 읽어주셔서 감사합니다! <br>
+                  아무쪼록 좋은 하루 보내시길 바랍니다 🥰 
                 </div>
-              </li>            
+              </li>
+
             </ul>
           </div>
         </article>
@@ -162,6 +190,7 @@
     </div>
   </div>
 
+  <!-- 연락처 -->
   <div class="block">
     <div class="deco_txt" data-aos="fade-right">
       NEW EXPERIENCE <br>
@@ -207,20 +236,21 @@
     </div>
   </div>
 
+
   <div class="modal">
     <div class="modal_overlay"></div>
     <div class="modal_content">
       <button class="btn_close">
-        <img src="img/xx.svg" alt="">
+        <img src="img/xx.svg" alt="취소 버튼">
       </button>
-      <img src="img/kakaoqr.png" alt="">
+      <img src="img/kakaoqr.png" alt="카카오톡 1:1대화 QR코드">
       <h5>QR찍고 카카오톡 채팅걸기💜</h5>
     </div>
   </div>
 
 
 
-
+  <!-- TMI -->
   <div class="block2">
     <h3 data-aos="fade-up">
       AND HERE'S A FEW <br>
@@ -243,7 +273,7 @@
         </li>
         <li class="swiper-slide">
           <div>
-            <img src="img/tmi11.gif" alt="">
+            <img src="img/tmi11.gif" alt="마이크드랍">
           </div>
           <h6>
             쇼미더머니, 고등래퍼 등 컴퍼티션 <br>
@@ -313,20 +343,17 @@
         </li>
       </ul>  
     </div>
-
-
   </div>
 
 
+  <!-- 탑버튼+푸터 -->
   <a class="top" href="#"> BACK TO TOP</a>
   <footer>
-    
+
     <h3 data-aos="fade-up">
       2021
     </h3>
-
-    <div class="svg-warp" data-aos="fade-right" data-aos-offset="500"
-    data-aos-easing="ease-in-sine" >
+    <div class="svg-warp" data-aos="fade-right" data-aos-offset="500"data-aos-easing="ease-in-sine" >
       <svg viewBox="0 0 500 500">
         <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
         <text width="500">
@@ -337,82 +364,13 @@
       </svg>
     </div>
     <div class="fooCon">
-      <img src="img/star.svg" alt="" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="img/star.svg" alt="별 그림" data-aos="zoom-in-up" data-aos-duration="1000">
       <p>2021 ALL RIGHT DESERVED</p>
     </div>
-
-
   </footer>
 
 
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script>
-    
-    AOS.init();
-
-  var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-      });
-      
-
-
-    const kakao = document.getElementById("kakao")
-    const modal = document.querySelector(".modal")
-    const overlay = document.querySelector(".modal_overlay")
-    const close_btn = document.querySelector(".btn_close")
-
-    const openModal = () => {
-      modal.classList.add("show");
-    }
-
-    const closeModal = () => {
-      modal.classList.remove("show");
-    }
-
-    kakao.addEventListener("click", openModal);
-    overlay.addEventListener("click", closeModal);
-    close_btn.addEventListener("click", closeModal);
-
-
-    // $(".faqArrow").rotate({angle:10});
-    // $(".accordQuestion").css("color":"red");
-
-    $(".accordQuestion").on('click',function(){
-      $(this).next(".accordAnswer").slideToggle("fast");
-      $(this).find(".faqArrow").rotate("90deg");
-    });
-
-    // $(".accordQuestion").on('click',function(){
-    //   $(this).next(".accordAnswer").slideToggle({
-    //     duration: 800,
-    //     start: function(){
-    //     $(this).prev.find('svg').rotate("90deg");
-    //     }
-    //   })
-    // });
-
-
-
-
-
-    $( window ).scroll( function() {
-      if ( $( this ).scrollTop() > 200 ) {
-        $( '.top' ).fadeIn();
-      } else {
-        $( '.top' ).fadeOut();
-      }
-    });
-
-    $( '.top' ).click( function() {
-      $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-      return false;
-    } );
-
-  </script>
 </body>
 </html>

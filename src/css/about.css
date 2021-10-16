@@ -17,10 +17,7 @@
 }
 
 
-
-
-
-a{text-decoration: none; color: white;}
+a{text-decoration: none; color: white; cursor: none;}
 *{margin: 0; padding: 0; }
 
 
@@ -31,6 +28,7 @@ body{
   margin: 0; padding: 0;
   box-sizing: border-box;
   color: white;
+  cursor: none;
 }
 
 nav {
@@ -50,11 +48,11 @@ nav > ul{
   justify-content: space-between;
   list-style: none; 
 }
+
 nav > ul > li {
   padding-right: 20px;
   list-style-type: none;
 }
-
 
 .menu{
   color: white;
@@ -69,6 +67,8 @@ nav > ul > li {
   color: gray;
 }
 
+
+/* 컨텐츠 */
 
 .profile{
   padding-top : 20px;
@@ -119,24 +119,17 @@ h2{
 
 .vid_face{
   width: 100%; height: 350px;
-  /* border: rgb(133, 210, 255) 2px solid; */
-  
   overflow: hidden;
   position: sticky;
-
   top: 0;
   z-index: 5;
 }
+
 video{
   padding: 15% 0;
   width: 110%;
-  min-width: 300px;
-
   transform: translate(-40px,0);
-  
-  /* border: violet 2px solid; */
 }
-
 
 .two_side{
   display: flex;
@@ -147,8 +140,6 @@ video{
 .leftside{
   width: 20%;
   padding: 0;
-  /* height: 3000px; */
-  /* border: violet 1px solid; */
 }
 
 .vertical{
@@ -158,36 +149,23 @@ video{
   writing-mode: vertical-rl;
   width: 100%;
   mix-blend-mode: difference;
-
 }
-
 
 .rightside{
   width: 75%;
   padding: 0;
-  /* border: violet 1px solid; */
   margin-left: auto;
 }
-
 
 .self{
   background: white;
   height: 500px;
-  
-  
 }
 
 .date{
   display: inline-block;
   width: 120px;
 }
-
-
-
-
-
-
-
 
 .line1 {
   display: block;
@@ -211,12 +189,11 @@ li{
   line-height: 3rem;
 }
 
-
-
 .block{
   width: 100%;
   padding-top: 200px;
 }
+
 .block2{
   padding-top: 350px;
   width: 75%;
@@ -232,7 +209,7 @@ li{
 }
 
 .accor-tit{
-  padding-left: 50px;
+  padding: 7% 5% 3%;
   text-transform: uppercase;
 }
 
@@ -242,12 +219,13 @@ li{
 }
 
 .accordlist li{
+  width: 90%;
+  border-top: 1px solid;
+  padding: 2% 5%;
+  position: relative;
+  
   font-family: 'yoongothic10';
   font-weight: 700;
-
-  border-top: 1px solid;
-  padding: 30px 50px;
-  position: relative;
 }
 
 .accordQuestion{
@@ -262,23 +240,35 @@ li{
   fill:white;
 }
 
-/* .faqArrow.active{
-  transform: translateY(-50%) rotate(-90deg);
-} */
+.faqArrow.active{
+  transform: rotate(-90deg)
+}
 
 .accordAnswer{
-  padding: 50px;
+  width: 90%;
+  padding: 5% 5%;
   margin-top: 20px;
   background: rgb(255, 255, 255);
   color: #333;
   display: none;
+
+  line-height: 1.7em;
+  word-break:keep-all
+}
+
+
+.accordlink{
+  text-decoration: wavy underline  #F5BB4E ;
+}
+
+.accordlink:hover{
+  color: #F5BB4E;
 }
 
 
 
 
-
-
+/* 컨택 */
 
 .deco_txt{
   width: 96%;
@@ -288,6 +278,9 @@ li{
   font-size: 6.3rem;
   padding-bottom: -40px;
   line-height: 5.8rem;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
 
   color: black;
   text-shadow:
@@ -295,7 +288,6 @@ li{
   1px -1px 0 rgb(255, 255, 255),
   -1px 1px 0 rgb(255, 255, 255),
   1px 1px 0 rgb(255, 255, 255); 
-
   position: relative;
 }
 
@@ -332,12 +324,11 @@ li{
 .contact h4:nth-of-type(1){
   padding-bottom: 50px;
 }
+
 .contact h4:nth-of-type(2){
   padding-bottom: 30px;
   color: white;
 }
-
-
 
 .icon-sns svg{
   fill:white;
@@ -383,17 +374,9 @@ h6{
   color: gray;
 }
 
-
-
-
-
-
-
 #kakao{
   position: relative;
-  cursor: pointer;
 }
-
 
 .modal{
   display: none;
@@ -406,14 +389,13 @@ h6{
   align-items: center;
 }
 
-
 .modal_overlay{
   background: rgba(0,0,0,0.8);
   width: 100%;
   height: 100%;
   position: absolute;
-  
 }
+
 .modal_content{
   background-color: white;
   width: 20%;
@@ -423,9 +405,11 @@ h6{
   text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
 .modal_content img{
   width: 100%;
 }
+
 .btn_close{
   border: none;
   background: none;
@@ -433,9 +417,9 @@ h6{
   margin-left: auto;
   padding: 5px;
 }
+
 .btn_close > img{
   width: 100%;
-  cursor: pointer;
 }
 
 .show{
@@ -444,18 +428,11 @@ h6{
 
 
 
-
-
-
-
-
-
-
+/* tmi 스와이퍼 */
 .swiper {
   width: 500px;
   height: 400px;
   padding: 20px 0 300px;
-
   z-index: 10;
   margin-left: 0;
 }
@@ -482,12 +459,10 @@ h6{
   font-size: 1.2rem;
 }
 
-
 .swiper-slide > div > img{
   width: 440px;
   padding: 0 30px;
 }
-
 
 .tmicap p{
   font-family: 'stretch';
@@ -495,10 +470,12 @@ h6{
   line-height: 6rem;
   padding: 0px 50px;
 }
+
 .tmicap p:nth-of-type(2){
   color: gray;
   padding: 0 50px;
 }
+
 .tmicap p:nth-of-type(3){
   font-family: 'yoongothic10';
   font-size: 1.2rem;
@@ -508,7 +485,7 @@ h6{
 
 
 
-
+/* 푸터 */
 
 .top{
   position: fixed;
@@ -522,18 +499,7 @@ h6{
   padding-left: 20px;
   font-family:'yoongothic10';
   font-weight: 700;
-
 }
-
-
-
-
-
-
-
-
-
-
 
 footer{
   padding-top: 350px;
@@ -542,12 +508,9 @@ footer{
   margin: 0 auto;
   text-align: center;
   position: relative;
-
-  /* border: springgreen 5px solid; */
 }
 
 .svg-warp{
-  /* border: rgb(141, 184, 162) 5px solid; */
   height: 600px;
   overflow: hidden;
 }
@@ -566,31 +529,106 @@ footer img{
   position: absolute;
   bottom: -70%; left: 50%;
   transform: translate(-50%,-50%);
-
 }
 
 footer p{
   padding: 50px 0 100px;
 }
 
+
+
+
 /* 미디어쿼리 */
 
-@media (max-width: 720px) {
-  .bdaycard{
-    top: 37%; left: 18%;
+@media (max-width: 1920px) {
+  .rightside{
+    width: 70%;
   }
-  .sticker{
-    top: 35%; left: 32%;
-  }
-}
-
-@media (max-width: 480px) {
-  .bdaycard{
-    top: 39%; left: 18%;
-  }
-
-  .sticker{
-    top: 36%; left: 32%;
+  h2{
+    font-size: 4.3rem;
+    line-height: 1.15em;
   }
 }
 
+@media (max-width: 1800px) {
+  .contact{
+    position: relative;
+    text-align: left;
+    padding: 250px 0 0;
+    width: 71%;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .two_side{
+    padding-top: 20%;
+  }
+  video{
+    width: 160%;
+  }
+
+  .star{
+    width: 130px;
+    padding: 20px;
+  }
+
+  h2{
+    font-size: 2.4rem;
+    line-height: 1.2em;
+    letter-spacing: -0.28rem;
+    padding-bottom: 100px;
+  }
+
+  .line1 {margin-bottom:80px}
+  }
+
+
+
+  
+
+/* 커서 */
+
+.cur0{
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgb(107, 107, 107);
+  position: absolute;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.cur0::after{
+  content: '';
+  position: absolute;
+  top: -7px; left: -7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid rgb(107, 107, 107);
+  position: absolute;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.clickcursor{
+  animation: cursorShake .5s forwards;
+  border: 1px solid #494949 ;
+  background: #ffffff; 
+}
+
+@keyframes cursorShake {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(3);
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
