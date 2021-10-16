@@ -43,22 +43,22 @@ window.onload = function(){
   // 스크롤 컬러 체인지
   swiper.on('slideChange', function () {
     switch (this.activeIndex) {
-      case 0 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat OldLace", "background-size": "cover"});
+      case 0 : $(".background").css({"background":"url(img/tt4.png) center top no-repeat OldLace", "background-size": "cover"});
       $(".txt").css({"color":"#355351"});         
       $(".swiper-pagination-bullet-active").css({"background":"#355351"});         
       $(".title-media720").css({"color":"#355351"});         
       break;
-      case 1 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat #aba5a1", "background-size": "cover"}); 				          
+      case 1 : $(".background").css({"background":"url(img/tt4.png) center top no-repeat #aba5a1", "background-size": "cover"}); 				          
       $(".txt").css({"color":"#5b3220"});				          
       $(".swiper-pagination-bullet-active").css({"background":"#5b3220"});         
       $(".title-media720").css({"color":"#5b3220"});         
       break;
-      case 2 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat blanchedalmond", "background-size": "cover"}); 				          
+      case 2 : $(".background").css({"background":"url(img/tt4.png) center top no-repeat blanchedalmond", "background-size": "cover"}); 				          
       $(".txt").css({"color":"gray"});				          
       $(".swiper-pagination-bullet-active").css({"background":"gray"});         
       $(".title-media720").css({"color":"gray"});         
       break;
-      case 3 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat beige", "background-size": "cover"}); 				          
+      case 3 : $(".background").css({"background":"url(img/tt4.png) center top no-repeat beige", "background-size": "cover"}); 				          
       $(".txt").css({"color":"black"});				          
       $(".swiper-pagination-bullet-active").css({"background":"black"});         
       $(".title-media720").css({"color":"black"});         
