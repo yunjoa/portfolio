@@ -2,7 +2,6 @@
 window.onload = function(){
 
   
-  console.log('upload1')
   console.log('hello, kkakkung')
 
     // 커서 

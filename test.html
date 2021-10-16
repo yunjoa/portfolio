@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+
+  <div class="accordion-box">
+    <ul class="list">
+      <li>
+       <p class="title">accodion-1</p>
+       <div class="con">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+     </li>
+     <li>
+       <p class="title">accodion-2</p>
+       <div class="con">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+     </li>
+     <li>
+       <p class="title">accodion-3</p>
+       <div class="con">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+      </li>
+     </ul>
+ </div>
+
+
+  <style>
+*{  margin: 0; padding: 0; }
+ul{list-style: none;}
+.accordion-box{
+  width: 100%; max-width: 600px;
+  margin:  0 auto;
+}
+p.title{
+  width: 100%;  
+  line-height: 60px; 
+  background: #000; 
+  color: #fff; 
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.con{
+  padding: 20px; 
+  display:none;
+}
+
+  </style>
+
+  <script>
+    $("p.title").on('click',function(){
+  $(this).next(".con").slideToggle(100);
+});
+  </script>
+
+</body>
+</html>
