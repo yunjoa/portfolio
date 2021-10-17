@@ -27,10 +27,10 @@ body {
   box-sizing: border-box;
   height: 3000px;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: none; */
 }
 
-a{ cursor: none;}
+/* a{ cursor: none;} */
 
 nav {
   mix-blend-mode: difference;
@@ -179,8 +179,13 @@ h5{
   width: 80%;
   height: 800px;
   margin: 0 auto;
-  background: greenyellow;
-  overflow: hidden;
+  object-fit: cover;
+}
+
+.img_2 img{
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #888;
 }
 
 .point{
@@ -197,8 +202,12 @@ h5{
 
 .swiper{
   width: 80%;
-  height: 600px;
+  height: auto;
   margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 100px;
+  position: relative;
+
 }
 
 .swiper-slide {
@@ -207,6 +216,7 @@ h5{
   background: blanchedalmond;
   display: flex;
   align-items: center;
+  border: 1px solid #888;
 }
 
 .swiper-slide img {
@@ -216,22 +226,40 @@ h5{
   object-fit: cover;
 }
 
-.point2{
+
+.swiper-pagination{
+  position: absolute;
+  bottom:0%;
+  left: 50%;
+}
+.swiper-pagination-bullet{
+  background: rgb(1, 83, 19);
+}
+
+
+
+
+.point2, .point3{
   width: 80%;
   display: flex;
 }
 
-.point2_word{
+.point2_word, .point3_word{
   width: 50%;
 }
 
-.point2_img{
+.point2_img, .point3_img{
   width: 50%;
-  height: 800px;
-  background: burlywood;
+  height: auto;
 }
 
-.point3{
+.point2_img img, .point3_img img{
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #888;
+}
+
+/* .point3{
   width: 80%;
   display: flex;
   flex-direction: row-reverse;
@@ -246,28 +274,31 @@ h5{
   width: 50%;
   height: 800px;
   background: burlywood;
-}
+} */
 
-.point4{
+.point4, .point5{
   width: 80%;
 }
 
-.point4_word{
+.point4_word, .point5_word{
   width: 100%;
 }
 
 .img_box{
   display: flex;
+  justify-content: space-between;
 }
 
-.point4_img{
-  width: 45%;
-  background: burlywood;
-  height: 500px;
+.point4_img, .point5_img{
+  width: 48%;
+  height: auto;
 }
 
-.point4_img:nth-of-type(1){
-margin-right: 10%;
+
+.point4_img img, .point5_img img{
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #888;
 }
 
 
@@ -324,7 +355,7 @@ footer img{
 
 
 /* 커서 */
-.cur0{
+/* .cur0{
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -365,7 +396,7 @@ footer img{
     transform: scale(1);
     opacity: 0;
   }
-}
+} */
 
 
 

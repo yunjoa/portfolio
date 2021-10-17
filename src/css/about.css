@@ -582,7 +582,22 @@ footer p{
   }
 
   .line1 {margin-bottom:80px}
+
+  .swiper{
+    width: 400px;
+    transform: scale(0.5);
   }
+  .swiper-slide > div > img{
+    width: 360px;
+    padding: 0 20px;
+  }
+  .tmicap p{
+    font-family: 'stretch';
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 0px 50px;
+  }
+}
 
 
 
