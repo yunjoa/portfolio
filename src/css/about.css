@@ -614,6 +614,7 @@ footer p{
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 10;
+  display: none;
 }
 
 .cur0::after{

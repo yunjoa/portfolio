@@ -16,7 +16,8 @@
 }
 
 a{text-decoration: none; color: white;}
-*{margin: 0; padding: 0; }
+*{margin: 0; padding: 0;   cursor: none;
+}
 
 
 
@@ -27,10 +28,10 @@ body {
   box-sizing: border-box;
   height: 3000px;
   overflow-x: hidden;
-  /* cursor: none; */
+  cursor: none;
 }
 
-/* a{ cursor: none;} */
+a{ cursor: none;}
 
 nav {
   mix-blend-mode: difference;
@@ -355,7 +356,7 @@ footer img{
 
 
 /* 커서 */
-/* .cur0{
+.cur0{
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -364,6 +365,7 @@ footer img{
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 10;
+  display: none;
 }
 
 .cur0::after{
@@ -396,7 +398,7 @@ footer img{
     transform: scale(1);
     opacity: 0;
   }
-} */
+}
 
 
 

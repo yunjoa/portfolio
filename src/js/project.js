@@ -15,6 +15,7 @@ window.onload = function(){
     });
   
     function cursor(e) {
+    mouseCursor0.style.display = "block"
     mouseCursor0.style.top = (e.pageY-2) + "px";
     mouseCursor0.style.left = (e.pageX-2) + "px";
     }
@@ -43,25 +44,30 @@ window.onload = function(){
   // 스크롤 컬러 체인지
   swiper.on('slideChange', function () {
     switch (this.activeIndex) {
-      case 0 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat OldLace", "background-size": "cover"});
+      case 0 : $(".background").css({"background":"url(../../img/tt4.png) center top no-repeat OldLace", "background-size": "cover"});
       $(".txt").css({"color":"#355351"});         
       $(".swiper-pagination-bullet-active").css({"background":"#355351"});         
       $(".title-media720").css({"color":"#355351"});         
       break;
-      case 1 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat #aba5a1", "background-size": "cover"}); 				          
+      case 1 : $(".background").css({"background":"url(../../img/tt4.png) center top no-repeat #aba5a1", "background-size": "cover"}); 				          
       $(".txt").css({"color":"#5b3220"});				          
       $(".swiper-pagination-bullet-active").css({"background":"#5b3220"});         
       $(".title-media720").css({"color":"#5b3220"});         
+      $(".title").css({"mix-blend-mode":"different"});         
+
       break;
-      case 2 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat blanchedalmond", "background-size": "cover"}); 				          
-      $(".txt").css({"color":"gray"});				          
-      $(".swiper-pagination-bullet-active").css({"background":"gray"});         
-      $(".title-media720").css({"color":"gray"});         
+      case 2 : $(".background").css({"background":"url(../../img/tt4.png) center top no-repeat gray", "background-size": "cover"}); 				          
+      $(".txt").css({"color":"#f8bb61"});				          
+      $(".swiper-pagination-bullet-active").css({"background":"#f8bb61"});         
+      $(".title-media720").css({"color":"#f8bb61"});         
+      $(".title").css({"mix-blend-mode":"normal"});         
       break;
       case 3 : $(".background").css({"background":"url(../img/tt4.png) center top no-repeat beige", "background-size": "cover"}); 				          
       $(".txt").css({"color":"black"});				          
       $(".swiper-pagination-bullet-active").css({"background":"black"});         
-      $(".title-media720").css({"color":"black"});         
+      $(".title-media720").css({"color":"black"});   
+      $(".title").css({"mix-blend-mode":"multiple"});         
+     
       break; 
     }
   });

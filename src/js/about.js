@@ -12,6 +12,7 @@ window.onload = function(){
     });
   
     function cursor(e) {
+    mouseCursor0.style.display = "block"
     mouseCursor0.style.top = (e.pageY-2) + "px";
     mouseCursor0.style.left = (e.pageX-2) + "px";
     }

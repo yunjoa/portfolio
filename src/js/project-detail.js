@@ -8,19 +8,21 @@
     console.log('hello, kkakkung')
 
   // 커서 
-  // let mouseCursor0 = document.querySelector(".cur0");
-  // window.addEventListener("mousemove", cursor);
-  // window.addEventListener("click", () => {
-  // mouseCursor0.classList.add("clickcursor");
-  // setTimeout(() => {
-  //   mouseCursor0.classList.remove("clickcursor");
-  // },300)
-  // });
+  let mouseCursor0 = document.querySelector(".cur0");
+  window.addEventListener("mousemove", cursor);
+  window.addEventListener("click", () => {
+  mouseCursor0.classList.add("clickcursor");
+  setTimeout(() => {
+    mouseCursor0.classList.remove("clickcursor");
+  },300)
+  });
 
-  // function cursor(e) {
-  // mouseCursor0.style.top = (e.pageY-2) + "px";
-  // mouseCursor0.style.left = (e.pageX-2) + "px";
-  // }
+  function cursor(e) {
+
+  mouseCursor0.style.display = "block";
+  mouseCursor0.style.top = (e.pageY-2) + "px";
+  mouseCursor0.style.left = (e.pageX-2) + "px";
+  }
 
 
     // 슬라이드
@@ -96,7 +98,6 @@
             siteview_link = "window.open('"+siteview+"')"
 
 
-            $(title).text(headTitle);
             $(".tit2").text(projectName);
             $(".tit3").text(title);
             $(".client").text(client);
